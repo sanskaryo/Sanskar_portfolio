@@ -29,19 +29,6 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
-  <script>
-    (function () {
-      const query = window.location.search;
-      if (query) {
-        const params = new URLSearchParams(query);
-        const redirect = params.get('redirect');
-        if (redirect) {
-          const newPath = '/Sanskar-portfolio/' + redirect;
-          window.history.replaceState(null, null, newPath);
-        }
-      }
-    })();
-  </script>
 </body>
 
 </html>
