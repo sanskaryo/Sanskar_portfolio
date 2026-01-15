@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanskar Khandelwal</title>
+  <meta name="description" content="Portfolio of Sanskar Khandelwal" />
+  <meta name="author" content="Sanskar Khandelwal" />
+
+
+  
+  <meta property="og:title" content="Sanskar Khandelwal" />
+  <meta property="og:description" content="AI Enthusiast building smart machines. View my projects and portfolio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/Project.jpeg" />
+
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Sanskar2209" />
+  <meta name="twitter:creator" content="@Sanskar2209" />
+  <meta name="twitter:title" content="Sanskar Khandelwal" />
+  <meta name="twitter:description" content="AI Enthusiast building smart machines. View my projects and portfolio." />
+  <meta name="twitter:image" content="/Project.jpeg" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <script>
+    (function () {
+      const query = window.location.search;
+      if (query) {
+        const params = new URLSearchParams(query);
+        const redirect = params.get('redirect');
+        if (redirect) {
+          const newPath = '/Sanskar-portfolio/' + redirect;
+          window.history.replaceState(null, null, newPath);
+        }
+      }
+    })();
+  </script>
+</body>
+
+</html>
