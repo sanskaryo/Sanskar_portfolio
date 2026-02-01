@@ -15,7 +15,7 @@ const App = () => (
       <Toaster />
       <Sonner />
 
-      <BrowserRouter basename="/Sanskar-portfolio">
+      <BrowserRouter >
         <TrackPageView />
 
         <Routes>
